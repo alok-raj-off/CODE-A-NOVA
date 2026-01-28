@@ -1,0 +1,7 @@
+## using use starte , while taking and form data and updating on the real time 
+
+----------------------use -------------------------------------------
+let [formdata , setform] = useState({
+  the form data and details
+})
+-------------------------------------------------------------------
