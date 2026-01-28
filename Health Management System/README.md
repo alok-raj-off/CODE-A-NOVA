@@ -1,16 +1,60 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🏥 Healthcare Web Application
 
-Currently, two official plugins are available:
+A modern, responsive healthcare platform developed using React.js and Tailwind CSS. This application showcases healthcare services with a clean user interface and features a fully functional contact form integrated with EmailJS for handling user inquiries without a backend server.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* **Responsive Design:** Fully adaptive UI built with Tailwind CSS that looks great on mobile, tablet, and desktop.
+* **Service Showcase:** dedicated sections to display medical specializations (Cardiology, Dental, General Consultation, etc.).
+* **Functional Contact Form:** Integrated with **EmailJS** to send real emails directly from the frontend.
+* **Modern UI/UX:** Clean aesthetics, smooth hover effects, and accessible navigation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* **Frontend:** React.js (Vite)
+* **Styling:** Tailwind CSS
+* **Form Handling:** EmailJS (or Getform.io)
+* **Icons:** FontAwesome / Heroicons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Prerequisites
+
+Ensure you have the following installed:
+* [Node.js](https://nodejs.org/) (v16 or higher)
+* An EmailJS account (Free tier is sufficient)
+
+## ⚙️ Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/healthcare-app.git](https://github.com/your-username/healthcare-app.git)
+    cd healthcare-app
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Tailwind CSS:**
+    Ensure `tailwind.config.js` is set up correctly (this is pre-configured if you cloned the repo).
+
+4.  **Setup Environment Variables:**
+    Create a `.env` file in the root directory to store your EmailJS keys securely.
+    ```env
+    VITE_EMAILJS_SERVICE_ID=your_service_id
+    VITE_EMAILJS_TEMPLATE_ID=your_template_id
+    VITE_EMAILJS_PUBLIC_KEY=your_public_key
+    ```
+
+5.  **Start the Development Server:**
+    ```bash
+    npm run dev
+    ```
+
+## 📧 How to Setup EmailJS
+
+1.  Go to [EmailJS.com](https://www.emailjs.com/) and sign up.
+2.  **Add Service:** Connect your email provider (e.g., Gmail).
+3.  **Create Template:** Design your email template (Use variables like `{{name}}`, `{{email}}`, `{{message}}`).
+4.  **Get Keys:** Copy your Service ID, Template ID, and Public Key into your `.env` file or directly into `ContactForm.jsx` for testing.
