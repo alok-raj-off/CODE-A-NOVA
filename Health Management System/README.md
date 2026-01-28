@@ -1,52 +1,16 @@
-# Healthcare Management System
+# React + Vite
 
-A frontend-based **Healthcare Management System** designed to help clinic or hospital staff manage patient records and appointments efficiently. This project is developed as part of my **Frontend Development Internship** at **Code-A-Nova**.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Project Overview
-The system provides an admin-style dashboard to manage basic healthcare operations such as patient registration and appointment scheduling. Firebase is used as the backend service for authentication and real-time data storage.
+Currently, two official plugins are available:
 
-This project focuses on clean UI design, frontend logic, and integration with cloud services.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Features
-- Admin login using Firebase Authentication
-- Dashboard with summary statistics
-- Patient management (add and view patients)
-- Appointment scheduling and listing
-- Real-time data storage using Firebase Firestore
-- Responsive user interface
+## React Compiler
 
-## Technologies Used
-- HTML  
-- CSS  
-- JavaScript  
-- Firebase Authentication  
-- Firebase Cloud Firestore
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
+## Expanding the ESLint configuration
 
-## How It Works
-- Admin logs in using Firebase Authentication
-- Patient and appointment data is stored in Firebase Firestore
-- JavaScript fetches and displays data dynamically in tables
-- Dashboard shows basic statistics based on stored data
-
-## Learning Outcomes
-- Understanding frontend application structure
-- Hands-on experience with Firebase services
-- Working with forms, validation, and dynamic data rendering
-- Improved skills in JavaScript and UI development
-
-## Future Enhancements
-- Edit and delete functionality
-- Doctor management module
-- Role-based access
-- Improved UI and charts for analytics
-
-## Author
-**Alokraj**  
-Frontend Development Intern  
-Code-A-Nova  
-
----
-
-> This project is created for educational and internship purposes.
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
