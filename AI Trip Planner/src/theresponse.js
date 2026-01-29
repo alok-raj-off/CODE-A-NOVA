@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Initialize the API with your key
 // (Ideally, use import.meta.env.VITE_API_KEY if using Vite, or process.env for Create-React-App)
-const genAI = new GoogleGenerativeAI("AIzaSyDluxnf2GgPQBAz3mzOwMaiG1U-3plAYmo");
+const genAI = new GoogleGenerativeAI("AIzaSyDsrElynkmYwKpHNWBjEIfJHUBHcOUVDW8");
 
 export const getAIResponse = async (prompt) => {
   try {

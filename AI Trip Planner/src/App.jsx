@@ -226,7 +226,7 @@ function Hello() {
 
           {/* Text Area */}
           <textarea
-            className='w-[99%] h-[33%] p-4 bg-transparent border-none outline-none resize-none text-main'
+            className='w-[99%] h-[33%] p-4 bg-transparent border-none outline-none resize-none text-maintxt'
             placeholder='Describe your trip...' name='desc' onChange={change_happned}
           ></textarea>
 
